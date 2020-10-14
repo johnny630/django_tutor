@@ -11,6 +11,9 @@ def special_case_2003(request):
 def year_archive(request, year):
     return HttpResponse(f'year_archive {year}')
 
+def year_convert_archive(request, year):
+    return HttpResponse(f'year_convert_archive {year}')
+
 def month_archive(request, year, month):
     return HttpResponse(f'month_archive {year}/ {month}')
 
